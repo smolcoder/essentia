@@ -105,7 +105,15 @@ def build(ctx):
         #                           'extractorsfx',
         #                           'extractorpanning',
         #                           'extractorpostprocess' ])
+        build_example('streaming', 'extractor_yaml',
+                                 [ 'extractorutils',
+                                   'extractor_archivemusic_tonal',
+                                   'extractor_archivemusic_lowlevel',
+                                   'extractorsfx',
+                                   'extractorpanning',
+                                   'extractor_archivemusic_postprocess' ])
 
+ 
         build_example('streaming', 'extractor_archivemusic',
                                  [ 'extractorutils',
                                    'extractor_archivemusic_tonal',

@@ -123,7 +123,8 @@ void compute(const string& audioFilename, const string& outputFilename, Pool& po
 #else
   cout << "Warning: Essentia was compiled without Gaia2 library, skipping process step 6 (cannot compute SVM models)" << endl;
 #endif
-  outputToFile(stats, outputFilename, true);
+  
+  outputToFile(stats, outputFilename, false);
   return;
 }
 
